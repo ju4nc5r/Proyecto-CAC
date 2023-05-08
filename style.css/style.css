@@ -10,7 +10,22 @@
     z-index: -1;
   }
 
-  h1 { 
-    color: white;
-    
+.flex-container 
+  {
+  display: flex;
+  background-color: black;
   }
+
+.flex-container > 
+  div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  }
+
+
+h1 { 
+  color: white;
+    
+}
