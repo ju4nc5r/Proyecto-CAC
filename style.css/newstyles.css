@@ -7,22 +7,10 @@
     width: 0%;
     animation: mymove 5s infinite;
     animation-timing-function: linear;
-}
-
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 200px;}
-}
-
-.degradado {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 5px;
-  background: linear-gradient(to right, #1abc9c, #3498db, #9b59b6, #e74c3c, #f1c40f, #1abc9c);
-  width: 0%;
-  z-index: -1;
-  transition: width 0.5s ease-out;
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 200px;}
+      }    
 }
 
 * {
@@ -41,6 +29,16 @@ body {
   text-align: center;
   background: #F5F5F5;
   color: black;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .h1 {
@@ -80,6 +78,39 @@ body {
   background-color: #FFFAF0;
   padding: 20px; 
 }
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.formulario{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 
 /* Main column */
 .main {

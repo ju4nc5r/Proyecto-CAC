@@ -1,3 +1,8 @@
+function scrollToSection() {
+  var seccionDestino = document.getElementById("deslizable");
+  seccionDestino.scrollIntoView({behavior: "smooth"});
+}
+
 let fakeimg = document.querySelector('.fakeimg');
 
 fakeimg.addEventListener('mouseover', function() {
