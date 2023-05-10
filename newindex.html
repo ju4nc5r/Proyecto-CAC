@@ -12,32 +12,34 @@
 </head>
 
 <body>
-  <header>
-    <!-- Barra de animaciones -->
-    <div class="barra_animaciones"></div>
-      <h4 style="text-align:center">Estaria bueno agregar una barra deslizable con algo</h4>
-    </div>
-
-    <!-- Presentacion -->
-    <div class="header">
-      <video autoplay loop muted id="video_background">
-        <source url="https://images-assets.nasa.gov/video/jsc2015m000221/jsc2015m000221~orig.mp4" type="video/mp4">
-      </video>
-      <h1>AstraVoyage</h1>   
-      <p>Discover <b>new worlds</b> in a flexible way</p>
-    </div>
-
-    <!-- Navigation Bar -->
-    <nav>
-      <div class="navbar">
-        <a style="flex-grow: 1" id="Pagina1"><a href="Pagina1.html" target="_blank">Astrophotography</a>
-        <a style="flex-grow: 4" id="Pagina2"><a href="Pagina2.html" target="_blank">Takeoffs</a>
-        <a style="flex-grow: 4" id="Pagina3"><a href="Pagina3.html" target="_blank">Crops</a>
-        <a style="flex-grow: 4" id="Pagina4"><a href="Pagina4.html" target="_blank">Vacuum Experience</a>
+  <section class="showcase">
+    <header>
+      <!-- Barra de animaciones -->
+      <div class="barra_animaciones"></div>
+        <h4 style="text-align:center">Estaria bueno agregar una barra deslizable con algo</h4>
       </div>
-    </nav>
-  </header>
+        <div id="background">
+          <div class="header">
+            <video autoplay loop muted id="video">
+              <source src="videos/mixkit-clouds-under-the-atmosphere-18772-medium.mp4" type="video/mp4">
+            </video>
+            <h1>AstraVoyage</h1>   
+            <p>Discover <b>new worlds</b> in a flexible way</p>
+            <button onclick="scrollToSection()">Let's communicate</button><br>
+          </div>
+        </div>
 
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="navbar">
+          <a style="flex-grow: 1" id="Pagina1"><a href="Pagina1.html" target="_blank">Astrophotography</a>
+          <a style="flex-grow: 4" id="Pagina2"><a href="Pagina2.html" target="_blank">Takeoffs</a>
+          <a style="flex-grow: 4" id="Pagina3"><a href="Pagina3.html" target="_blank">Crops</a>
+          <a style="flex-grow: 4" id="Pagina4"><a href="Pagina4.html" target="_blank">Vacuum Experience</a>
+        </div>
+      </nav>
+    </header>
+  </section>
   <!-- The flexible grid (content) -->
   <div class="row">
     <div class="side">
@@ -45,9 +47,10 @@
       <div id="foto1"> <img src="videos/Ejemplo pag.jpg" style="max-width: 100%; height: auto;"></div>
       <p>Our Space Class Orbiter is an advanced design spacecraft, specially designed for orbital travel. Equipped with the latest technology in life support systems, this ship offers a safe and comfortable experience for our passengers and crew. With capacity for a limited number of passengers, our clients will be able to enjoy an authentic space travel experience with impressive views of Earth and the unique sensation of weightlessness in space.</p>
       <button onclick="scrollToSection()">Let's communicate</button><br>
+      <!-- Footer
       <div id="deslizable">
-        <p>You can also be a part</p>
         <div class="formulario">
+          <p>You can also be a part</p>
           <form action="">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -65,7 +68,7 @@
             <input type="submit" value="Submit">
           </form>
         </div>
-      </div>
+      </div> -->
     </div>
     
     <div class="main">
@@ -87,7 +90,27 @@
 
   <!-- Footer -->
   <div class="footer">
-    <h2>Footer</h2>
+    <h2>Know more about us</h2>
+    <div id="deslizable">
+      <div class="formulario2">
+        <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          </select>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
   </div>
 
   </body>
