@@ -18,17 +18,16 @@
       <div class="barra_animaciones"></div>
         <h4 style="text-align:center">Estaria bueno agregar una barra deslizable con algo</h4>
       </div>
-        <div id="background">
-          <div class="header">
-            <video autoplay loop muted id="video">
-              <source src="videos/mixkit-clouds-under-the-atmosphere-18772-medium.mp4" type="video/mp4">
-            </video>
-            <h1>AstraVoyage</h1>   
-            <p>Discover <b>new worlds</b> in a flexible way</p>
-            <button onclick="scrollToSection()">Let's communicate</button><br>
-          </div>
+      <div id="background">
+        <div class="header">
+          <video autoplay loop muted id="video">
+            <source src="videos/mixkit-clouds-under-the-atmosphere-18772-medium.mp4" type="video/mp4">
+          </video>
+          <h1>AstraVoyage</h1>   
+          <p>Discover <b>new worlds</b> in a flexible way</p>
+          <button onclick="scrollToSection()">+</button><br>
         </div>
-
+      </div>
       <!-- Navigation Bar -->
       <nav>
         <div class="navbar">
@@ -40,23 +39,46 @@
       </nav>
     </header>
   </section>
+
   <!-- The flexible grid (content) -->
-  <div class="row">
-    <div class="side">
-      <h2>Our latest release</h2>
-      <div id="foto1"> <img src="videos/Ejemplo pag.jpg" style="max-width: 100%; height: auto;"></div>
-      <p>Our Space Class Orbiter is an advanced design spacecraft, specially designed for orbital travel. Equipped with the latest technology in life support systems, this ship offers a safe and comfortable experience for our passengers and crew. With capacity for a limited number of passengers, our clients will be able to enjoy an authentic space travel experience with impressive views of Earth and the unique sensation of weightlessness in space.</p>
-      <button onclick="scrollToSection()">Let's communicate</button><br>
-      <!-- Footer
+  <main>
+    <div class="row">
+      <div class="side">
+        <h2>Our latest release</h2>
+        <div id="foto1"> <img src="videos/Ejemplo pag.jpg" style="max-width: 100%; height: auto;"></div>
+        <p>Our Space Class Orbiter is an advanced design spacecraft, specially designed for orbital travel. Equipped with the latest technology in life support systems, this ship offers a safe and comfortable experience for our passengers and crew. With capacity for a limited number of passengers, our clients will be able to enjoy an authentic space travel experience with impressive views of Earth and the unique sensation of weightlessness in space.</p>
+      </div>
+      
+      <div class="main">
+        <h2>AstraVoyage</h2>
+        <h5>When the expected is the unexpected</h5>
+
+        <p>
+          Our tourist space flights provide a unique and unforgettable experience for our clients, we offer suborbital and orbital flights aboard spacecraft specially designed for space tourism. Our clients can enjoy breathtaking views of Earth from space, experience weightlessness, and participate in exciting activities such as stargazing and astrophotography. In addition, we offer a personalized service to make sure that our clients have an unforgettable experience.<br>
+          <br>
+          On the other hand, we are also a company dedicated to agricultural research and development in space. Our team of experts works on the development of new crops to be grown in space, taking advantage of the unique conditions of the space environment to improve the quality and quantity of crops. We also research new methods and technologies to improve the efficiency and sustainability of agriculture on Earth.<br>
+          <br>
+          In short, our company combines the excitement and adventure of space tourism with the research and development of new agricultural solutions. We are committed to innovating and advancing space technology to make space accessible and beneficial for all.
+        </p>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <br>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+  <!-- Footer -->
+    <div class="footer">
+      <h3>Know more about us</h3>
       <div id="deslizable">
-        <div class="formulario">
-          <p>You can also be a part</p>
+        <div class="formulario2">
           <form action="">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
           
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your email...">
 
             <label for="country">Country</label>
             <select id="country" name="country">
@@ -68,52 +90,17 @@
             <input type="submit" value="Submit">
           </form>
         </div>
-      </div> -->
-    </div>
-    
-    <div class="main">
-      <h2>AstraVoyage?</h2>
-      <h5>When the expected is the unexpected</h5>
-
-      <p>
-        Our tourist space flights provide a unique and unforgettable experience for our clients, we offer suborbital and orbital flights aboard spacecraft specially designed for space tourism. Our clients can enjoy breathtaking views of Earth from space, experience weightlessness, and participate in exciting activities such as stargazing and astrophotography. In addition, we offer a personalized service to make sure that our clients have an unforgettable experience.<br>
-        <br>
-        On the other hand, we are also a company dedicated to agricultural research and development in space. Our team of experts works on the development of new crops to be grown in space, taking advantage of the unique conditions of the space environment to improve the quality and quantity of crops. We also research new methods and technologies to improve the efficiency and sustainability of agriculture on Earth.<br>
-        <br>
-        In short, our company combines the excitement and adventure of space tourism with the research and development of new agricultural solutions. We are committed to innovating and advancing space technology to make space accessible and beneficial for all.
-      </p>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <h2>Know more about us</h2>
-    <div id="deslizable">
-      <div class="formulario2">
-        <form action="">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          </select>
-
-          <input type="submit" value="Submit">
-        </form>
       </div>
     </div>
-  </div>
+  </footer>
 
-  </body>
+<script>
+  fuction validar(event){
+    event.preventDefault()
+  } 
+</script>
+
+</body>
 </html>
 
 

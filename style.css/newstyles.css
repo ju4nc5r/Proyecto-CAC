@@ -27,18 +27,9 @@ body {
 .header {
   padding: 60px;
   text-align: center;
-  background: #708090;
+  background: #F5FFFA;
   color: black;
   position: relative;
-}
-
-.background .header .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 30;
 }
 
 .h1 {
@@ -79,7 +70,6 @@ body {
   padding: 20px;
 }
 
-
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -106,7 +96,7 @@ input[type=submit]:hover {
 }
 
 .formulario{
-  border-radius: 5px;
+  border-radius: 20px;
   background-color: #f2f2f2;
   padding: 20px;
   margin-right: 60px;
@@ -126,16 +116,6 @@ img {
   margin: auto;
 }
 
-#Saturno {
-  width: auto;
-  height:auto; 
-  border: 10px black;
-  padding: 100px;
-
-  background-position-x: center; 
-  background-image: url("https://pixabay.com/gifs/get/g62c1920457adc9912f02241e1bd8af9b758006a02de1a9b94cf36b6f5f7a1cdbcf080bdfb1ff92db36505ae2c3cb58f7.gif"); 
-  background-repeat: no-repeat; 
-} 
 
 /* Fake image, just for this example */
 .fakeimg {
@@ -160,12 +140,16 @@ img {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin-right: 80px;
+  margin-left: 1400px;
   margin-top: 20px;
-  width: 50%;
+  width: 300px;
   text-align: left;
 }
 
+h3 {
+  text-align: right;
+  margin-right: 150px;
+}
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row, .navbar {   
