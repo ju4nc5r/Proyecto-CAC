@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travels</title>
+    <title>Titulo pag</title>
     <link rel="stylesheet" href="./style.css/style.css">
     <script src="app.js"></script>
-	<link rel="stylesheet" href="transiciones-2.css">
-	<!-- <link rel="stylesheet" href="animaciones-2.css"> -->
 </head>
 
 <body>
-	<header>
+    <header>
         <video autoplay loop muted id="video_background">
             <source src="Q:\Proyectos\Proyecto-CAC\videos\espacio.mp4" type="video/mp4">
         </video>
-        <h1>Destinos</h1>
+        <h1>Titulo</h1>
         <div class="header-logo"></div>
         <nav class="header-menubar"></nav>
         <div class="flex-container">
@@ -27,47 +25,75 @@
         </div>  
     </header>
 
-	<form id="miFormulario" onsubmit="guardarPersona(event)">
-		<label for="nombre">Nombre:</label>
-		<input type="text" id="nombre" maxlength="15" name="nombre" required >
+    <main>
+        <div>
+            <section>
+				<form id="miFormulario" onsubmit="guardarPersona(event)">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" maxlength="15" name="nombre" required >
+			
+					<label for="apellido">Apellido:</label>
+					<input type="text" id="apellido" size="15" maxlength="20" name="apellido" required>
+			
+					<label for="domicilio">Domicilio:</label>
+					<input type="text" id="domicilio" size="15" maxlength="20" name="domicilio" required>
+			
+					<label for="fecha"> Fecha de nacimiento:</label>
+					<input name="fecha" id="fecha"  type="date" required>
+			
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+			
+					<label for="nivelEstudios">Nivel de estudios:</label>
+					<select id="nivelEstudios" name="nivelEstudios" >
+						<option value="">Seleccione un nivel de estudios</option>
+						<option value="primario">Primario</option>
+						<option value="secundario">Secundario</option>
+						<option value="terciario">Terciario</option>
+						<option value="universitario">Universitario</option>
+					</select>
+					
+					<label for="planeta">Planeta deseado:</label>
+					<select id="planeta" name="planeta" >
+						<option value="">Seleccione una opcion</option>
+						<option value="marte">marte</option> 
+						<option value="luna">luna</option>
+						<option value="Ascenso">Ascenso</option>
+						<option value="Nada">Nada</option>
+					</select>
+			
+					<label for="celular">Número de celular:</label>
+					<input type="tel" id="celular" size="15" maxlength="20" name="celular" >
+			
+					<button type="submit">Enviar </button> 
+					<button type="reset">R e s e t</button>
+				</form>
+            </section>
+            <section>
+                <article>
+                    <img src="" alt="">
+                    <div>
+                        <h3>
+                        
+                        </h3>
+                        <p>
 
-		<label for="apellido">Apellido:</label>
-		<input type="text" id="apellido" size="15" maxlength="20" name="apellido" required>
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <aside></aside>
+    </main>
+    <footer>
+    <script>
+        console.log()
+        console.info()
+        //se utilizan para mostrar info en la consola. 
+    </script>
+</body>
+</html>
 
-		<label for="domicilio">Domicilio:</label>
-		<input type="text" id="domicilio" size="15" maxlength="20" name="domicilio" required>
-
-		<label for="fecha"> Fecha de nacimiento:</label>
-        <input name="fecha" id="fecha"  type="date" required>
-
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-
-		<label for="nivelEstudios">Nivel de estudios:</label>
-		<select id="nivelEstudios" name="nivelEstudios" >
-			<option value="">Seleccione un nivel de estudios</option>
-			<option value="primario">Primario</option>
-			<option value="secundario">Secundario</option>
-			<option value="terciario">Terciario</option>
-            <option value="universitario">Universitario</option>
-		</select>
-		
-        <label for="planeta">Planeta deseado:</label>
-		<select id="planeta" name="planeta" >
-			<option value="">Seleccione una opcion</option>
-			<option value="marte">marte</option> 
-			<option value="luna">luna</option>
-			<option value="Ascenso">Ascenso</option>
-            <option value="Nada">Nada</option>
-		</select>
-
-		<label for="celular">Número de celular:</label>
-		<input type="tel" id="celular" size="15" maxlength="20" name="celular" >
-
-		<button type="submit">Enviar </button> 
-		<button type="reset">R e s e t</button>
-	</form>
-	
 <script>
     function guardarPersona(event){
         event.preventDefault();
