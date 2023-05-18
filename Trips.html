@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels</title>
+    <link rel="stylesheet" href="./style.css/style.css">
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="transiciones-2.css">
+	<!-- <link rel="stylesheet" href="animaciones-2.css"> -->
+</head>
+
+<body>
+	<header>
+        <video autoplay loop muted id="video_background">
+            <source src="Q:\Proyectos\Proyecto-CAC\videos\espacio.mp4" type="video/mp4">
+        </video>
+        <h1>Destinos</h1>
+        <div class="header-logo"></div>
+        <nav class="header-menubar"></nav>
+        <div class="flex-container">
+            <div style="flex-grow: 1" id="Pagina1"><a href="Pagina1.html" target="_blank">Marte</a></div>
+            <div style="flex-grow: 1" id="Pagina2"><a href="Pagina2.html" target="_blank">Venus</a></div>
+            <div style="flex-grow: 1" id="Pagina3"><a href="Pagina3.html" target="_blank">Neptuno</a></div>
+            <div style="flex-grow: 8" id="Pagina4"><a href="Pagina4.html" target="_blank">Saturno</a></div> 
+        </div>  
+    </header>
+
+	<form id="miFormulario" onsubmit="guardarPersona(event)">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" maxlength="15" name="nombre" required >
+
+		<label for="apellido">Apellido:</label>
+		<input type="text" id="apellido" size="15" maxlength="20" name="apellido" required>
+
+		<label for="domicilio">Domicilio:</label>
+		<input type="text" id="domicilio" size="15" maxlength="20" name="domicilio" required>
+
+		<label for="fecha"> Fecha de nacimiento:</label>
+        <input name="fecha" id="fecha"  type="date" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="nivelEstudios">Nivel de estudios:</label>
+		<select id="nivelEstudios" name="nivelEstudios" >
+			<option value="">Seleccione un nivel de estudios</option>
+			<option value="primario">Primario</option>
+			<option value="secundario">Secundario</option>
+			<option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+		</select>
+		
+        <label for="planeta">Planeta deseado:</label>
+		<select id="planeta" name="planeta" >
+			<option value="">Seleccione una opcion</option>
+			<option value="marte">marte</option> 
+			<option value="luna">luna</option>
+			<option value="Ascenso">Ascenso</option>
+            <option value="Nada">Nada</option>
+		</select>
+
+		<label for="celular">Número de celular:</label>
+		<input type="tel" id="celular" size="15" maxlength="20" name="celular" >
+
+		<button type="submit">Enviar </button> 
+		<button type="reset">R e s e t</button>
+	</form>
+	
+<script>
+    function guardarPersona(event){
+        event.preventDefault();
+        let formulario = document.getElementById('miFormulario');
+        let nombre = formulario.elements['nombre'].value;
+        if(nombre.length < 3)
+        return alert('Ingrese un nombre valido');
+        let apellido = formulario.elements['apellido'].value;
+		if(apellido.length < 3)
+        return alert('Ingrese un apellido valido');
+        let email = formulario.elements['email'].value;
+        let nivelEstudios = formulario.elements['nivelEstudios'].value;
+        let celular = formulario.elements['celular'].value
+        let domicilio = formulario.elements['domicilio'].value;
+		if(domicilio.length < 3)
+        return alert('Ingrese un domicilio valido');
+		let planeta = formulario.elements['planeta'].value;
+		let fecha = formulario.elements['fecha'].value;
+
+        if(!nombre || !apellido || !domicilio || !email || !nivelEstudios || !celular){
+            alert('Por favor complete todos los campos');
+        }
+        let persona = {
+            nombre: nombre,
+            apellido: apellido,
+            domicilio: domicilio,
+            email: email,
+            nivelEstudios: nivelEstudios,
+            celular: celular,
+			planeta: planeta,
+			fecha: fecha,
+        };
+        localStorage.setItem('persona', JSON.stringify(persona));
+        window.location.href = 'datos.html';
+    }     
+
+let button = document.querySelector('button');
+    button.addEventListener('Enviar',function(){
+        button.innerText = "Ya hiciste click";
+        button.disabled = true;
+    })
+
+</script>
+</body>
+</html>
