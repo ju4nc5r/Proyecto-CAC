@@ -26,7 +26,7 @@
           </video>
           <h1>AstraVoyage</h1>   
           <p>Discover <b>new worlds</b> in a flexible way</p>
-          <button onclick="scrollToSection()">+</button><br>
+          <button id="button" onclick="scrollToSection()">▼</button><br>
         </div>
       </div>
       <!-- Navigation Bar -->
@@ -50,10 +50,11 @@
         <p>Our Space Class Orbiter is an advanced design spacecraft, specially designed for orbital travel. Equipped with the latest technology in life support systems, this ship offers a safe and comfortable experience for our passengers and crew. With capacity for a limited number of passengers, our clients will be able to enjoy an authentic space travel experience with impressive views of Earth and the unique sensation of weightlessness in space.</p>
       </div>
       
-      <div class="main">
+      <div id="deslizable" class="main">
         <h2>AstraVoyage</h2>
         <h5>When the expected is the unexpected</h5>
 
+        <div class="parrafo">
         <p>
           Our tourist space flights provide a unique and unforgettable experience for our clients, we offer suborbital and orbital flights aboard spacecraft specially designed for space tourism. Our clients can enjoy breathtaking views of Earth from space, experience weightlessness, and participate in exciting activities such as stargazing and astrophotography. In addition, we offer a personalized service to make sure that our clients have an unforgettable experience.<br>
           <br>
@@ -61,10 +62,15 @@
           <br>
           In short, our company combines the excitement and adventure of space tourism with the research and development of new agricultural solutions. We are committed to innovating and advancing space technology to make space accessible and beneficial for all.
         </p>
+        </div>
         <br><br>
-        <p>Aca va un iframe</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <iframe src="https://video.ibm.com/recorded/48419364" width="560" height="315" scrolling="no" frameborder="0" allowfullscreen></iframe>
+
+        <div class="videofrente">
+          <video autoplay loop muted id="video2">
+          <source src="videos/frente.mp4" type="video/mp4">
+          </video>
+        </div>
+        
 
         <br>
       </div>
@@ -72,30 +78,23 @@
   </main>
   
     <!-- Footer -->
-  <footer>
-    <div class="footer">
-      <h3>Know more about us</h3>
-      <div id="deslizable">
-        <div class="formulario2">
-          <form action="">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name...">
-          
-            <label for="lname">Email</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your email...">
+  <footer class="footer">
+      <form class="formulario2">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your email...">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            </select>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        </select>
 
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
-    </div>
+        <input type="submit" value="Submit">
+      </form>
   </footer>
 
 
