@@ -1,0 +1,11 @@
+#marte{
+  background: url(https://www.nasa.gov/sites/default/files/thumbnails/image/pia22486_orig.png) center center no-repeat;
+  background-size: cover;
+  align-items: center;
+}
+
+
+a:visited {
+  color: black; /* Cambia el color a tu preferencia */
+  text-decoration: none; /* Elimina el subrayado */
+}
