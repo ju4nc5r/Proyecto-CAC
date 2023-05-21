@@ -1,13 +1,21 @@
 Por hacer: 
-
+Armar la estructura de formulario para completar en cada actividad
 Agregar barra con animacion en la parte superior
+Ver aspectos de diseño(titulos de paginas, logo)
+Validar datos del formulario 
+Revisar las fuentes de los titulos 
+Verificar elementos flex en cada pantalla
+Consumo de API rest 
+
+
+
+
 Extender el cuerpo de la pagina y el side (listo)
 Completar el Footer (direccion, contacto, email, empresas involucradas, etc) (listo)
-Armar la estructura de formulario para completar en cada actividad 
 Armar la estructura de formulario de contacto para la home (listo)
-Agregar al menos un iframe (Pienso agregarlo en la pantalla incial)
-Ver aspectos de diseño 
-Agregar estilo al boton con la funcionalidad desplegable
+Agregar al menos un iframe (listo)
+Agregar estilo al boton con la funcionalidad desplegable (listo)
+
 
 
 
