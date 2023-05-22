@@ -49,6 +49,17 @@ body {
     color: black;
   }
 
+.imglogo {
+    margin: 10px;
+    margin-left: 20px;
+}   
+  #logo {
+    display: flex;
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
 .container {
     display: flex;
     background-color: #fff;
