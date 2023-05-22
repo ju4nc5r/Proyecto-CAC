@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form class="form">
+            <h2>AstraVoyage</h2>
+            <p>
+                With capacity for a limited number of passengers, our clients will be able to enjoy an authentic space
+                travel experience with impressive views of Earth and the unique sensation of weightlessness in space.
+            </p>
+            <label for="nombre">Write your name</label>
+            <input type="text" id="nombre" class="box">
+            <label for="apellido">Write your last name</label>
+            <input type="text" id="last name" class="box">
+            <label for="correo">Write your email</label>
+            <input type="email" id="mail" class="box">
+            <label for="fecha">Birthdate</label>
+            <input name="fecha" id="fecha" type="date" class="box">
+            <label for="celular">Cell Phone</label>
+            <input type="tel" id="celular" size="15" maxlength="20" name="celular" class="box">
+            <label for="fecha">Takeoff date</label>
+            <input name="fecha" id="fecha" type="date" class="box">
+            <label for="planeta">Desired Planet</label>
+            <select id="planeta" name="planeta" class="box">
+                <option value="">Select an option</option>
+                <option value="marte">Mars</option>
+                <option value="luna">Moon</option>
+                <option value="Ascenso">Ascent</option>
+                <option value="Nada">None</option>
+            </select>
+            <label for="butaca">Seat</label>
+            <select id="planeta" name="planeta" class="box">
+                <option value="">Select an option</option>
+                <option value="seat1">01</option>
+                <option value="seat2">02</option>
+                <option value="seat3">03</option>
+                <option value="seat4">04</option>
+                <option value="seat5">05</option>
+                <option value="seat6">06</option>
+                <option value="seat7">07</option>
+                <option value="seat8">08</option>
+            </select>
+            <label for="mensaje">Write your message</label>
+            <textarea class="box" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="images/info-1.svg" class="info-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <img src="images/gps.svg" alt="">
+                    <p>753 Kennedy, Sillicon Valley.</p>
+                </div>
+                <div class="icons">
+                    <img src="images/number.svg" alt="">
+                    <p>+1 234 567 890</p>
+                </div>
+                <div class="icons">
+                    <img src="images/email.svg" alt="">
+                    <p>info@astravoyage.com</p>
+                </div>
+            </div>
+            <div class="social">
+                <img src="images/fa.svg" alt="">
+                <img src="images/tw.svg" alt="">
+                <img src="images/ins.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
