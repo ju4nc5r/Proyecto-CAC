@@ -10,10 +10,21 @@
 }
 
 body {
-    background-color: #807efd;
-
+    /*background-color: #807efd;*/
 }
 
+#video_background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+  
 .container {
     display: flex;
     background-color: #fff;
