@@ -1,0 +1,15 @@
+table {
+    width: 500px;
+    height: 997px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  th {
+    font-weight: bold;
+  }

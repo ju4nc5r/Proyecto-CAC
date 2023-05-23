@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos básicos */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      font-size: 48px;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    // Obtener la hora específica
+    var specificHour = 14; // Hora específica (en formato de 24 horas)
+
+    // Función para actualizar el reloj
+    function updateClock() {
+      var now = new Date();
+      var currentHour = now.getHours();
+
+      // Comprobar si la hora actual coincide con la hora específica
+      if (currentHour === specificHour) {
+        var clockElement = document.getElementById("clock");
+        clockElement.textContent = now.toLocaleTimeString();
+      }
+    }
+
+    // Actualizar el reloj cada segundo
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>

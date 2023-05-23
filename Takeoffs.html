@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TakeOffs</title>
+<title>Despegues</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="Q:\Proyectos\Proyecto-CAC\videos\satelite.ico">
 <link rel="stylesheet" href="./style.css/contact.css">
+<link rel="stylesheet" href="./style.css/styletakeoffs.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Russo+One&display=swap" rel="stylesheet">
@@ -25,26 +26,43 @@
       </div>
     <main class="main">
       <aside class="aside">
-        <div class="margin">
-        <form class="formulario2">
-          <h3>Contact us</h3>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name...">
-        
-          <label for="lname">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email...">
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-          </select>
-
-          <input type="submit" value="Submit">
-          <p>No recopilamos ni almacenamos ningún dato personal a través de este sitio web. No compartimos información con terceros y respetamos la privacidad de nuestros visitantes.</p>
-        </form>
-        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Planeta</th>
+              <th>Disponibilidad</th>
+              <th>Hora de salida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marte</td>
+              <td>5 pasajes disponibles</td>
+              <td>18:30</td>
+            </tr>
+            <tr>
+              <td>Jupiter</td>
+              <td>3 pasajes disponibles</td>
+              <td>20:00</td>
+            </tr>
+            <tr>
+              <td>Saturno</td>
+              <td>8 pasajes disponibles</td>
+              <td>22:45</td>
+            </tr>
+            <!-- Agrega las filas restantes aquí -->
+            <tr>
+              <td>Urano</td>
+              <td>2 pasajes disponibles</td>
+              <td>00:15</td>
+            </tr>
+            <tr>
+              <td>Neptuno</td>
+              <td>7 pasajes disponibles</td>
+              <td>10:00</td>
+            </tr>
+          </tbody>
+        </table>
       </aside>
       <video autoplay loop muted id="videocrops">
         <source src="videos/despegue.mp4" type="video/mp4">
