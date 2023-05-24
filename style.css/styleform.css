@@ -160,6 +160,12 @@ label {
     color: #969EAE;
 }
 
+.mail {
+    text-decoration: none;
+    color: #969EAE;
+    ;
+  }  
+
 .social {
     display: flex;
 
