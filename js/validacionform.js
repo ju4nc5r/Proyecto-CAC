@@ -11,11 +11,16 @@
         let email = formulario.elements['email'].value;
         let fecha1 = formulario.elements['fecha'].value;
         let celular = formulario.elements['celular'].value
+        if(celular.length < 10)
+        return alert('Ingrese un celular valido');
         let fecha2 = formulario.elements['fecha'].value;
 		let planeta = formulario.elements['planeta'].value;
-		let fecha = formulario.elements['fecha'].value;
+		let asiento = formulario.elements['asiento'].value;
+        let msj = formulario.elements['asiento'].value;
+        if(mensaje.length < 25)
+        return alert('El mensaje debe contener menos de 25 caracteres');
 
-        if(!nombre || !apellido || !email || !fecha1 || !celular || !fecha2){
+        if(!nombre || !apellido || !email || !fecha1 || !celular || !fecha2 || planeta || asiento || msj){
             alert('Por favor complete todos los campos');
         }
         let persona = {
